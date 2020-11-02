@@ -1,0 +1,286 @@
+/*PORTFOLIO STYLESHEET!*/
+
+/*Phone size*/
+@media screen and (min-width: 430px){
+
+h1{
+	display: block; 
+	font-size: 2em; 
+	margin-top: 0.67em; 
+	margin-bottom: 0.67em; 
+	margin-left: 0; 
+	margin-right: 0; 
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Sen', sans-serif;
+	color: #217CFF;
+}
+
+nav ul li{
+	background-color:white;
+	padding:10px;
+	width:25%;
+	border:2px solid #217CFF;
+	text-decoration: none;
+}
+
+
+/*.current{
+	background-color:red;
+	color: violet;
+	text-decoration: underline;
+}*/
+
+
+
+
+/* Digital Art Gallery */
+.gallery{
+	min-height: 600px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+  
+  }
+  
+  .gallery > img{
+	border: 5px #217CFF solid;
+	margin: 10px;
+	width: 220px;
+  }
+
+.gallery > img:hover
+{
+	transform:scale(1.4);
+	-webkit-transform: scale(1.4);
+
+}
+
+
+
+header{
+	background: #fff;
+	border-bottom: 3px solid #FF6347;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  
+  
+  }
+
+  /*display:grid instead of display flex line 66
+  */
+  
+  .nav_links{
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	
+  
+  }
+
+
+  
+  .nav_links a{
+	color: black;
+	text-decoration: none;
+  }
+  
+
+  .nav_links a:hover{
+	color: #217cff;
+	text-decoration: none;
+
+  }
+
+
+  .nav_links .current {
+	
+	color: #217cff;
+	text-decoration: underline;
+}
+
+
+
+  body{
+	font-family: 'Sen', sans-serif;
+	margin:1%;
+	padding:1%;
+	
+}
+
+p {
+	display: block;
+	text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 80px;
+	margin-inline-end: 80px;
+	font-family: 'Sen', sans-serif;
+	
+}
+
+header, main, nav, footer{
+	border: 1px solid grey;
+	margin-bottom: 10px;
+}
+
+img{
+	height: 200px;
+	width: inherit;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+header img{
+	width: 95vw;
+	height: inherit;
+
+}
+
+
+footer{
+	text-align: center;
+
+
+}
+
+
+/* added from media screen 760 */
+
+
+}
+
+
+
+/*FORM*/
+
+
+
+
+  @media screen and (min-width: 760px){
+	#logo{min-width:300px}
+
+  
+	/* Navbar */
+	header{
+	  flex-direction: row;
+	  justify-content: space-between;
+	  
+  }
+	
+  
+	.nav_links{  
+	  flex-direction: row;
+	  text-decoration: none;
+	
+  
+	}
+  
+	.nav_links a{
+	  padding: 0px;
+	}
+  } 
+
+
+  /*@media screen and (min-width: 1050px)*/
+
+
+
+/*Form code from Colleen*/
+
+form {
+	border: 3px solid #f1f1f1;
+  }
+  
+  legend{ 
+	font-size: 125%;
+	/* text-transform: lowercase; */
+	text-align: center;
+  }
+  
+  label{
+	display: inline-block;
+	margin-right:10px;
+	width:15%;
+  }
+  input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+
+  input:focus{
+	  background-color: yellow;
+	  border: 2px solid #217CFF;
+  }
+
+  textarea:focus{
+	background-color: yellow;
+	border: 2px solid #217CFF;
+}
+  span{
+	margin-left:20%;
+	font-family: italic;
+	font-weight: bold;
+  }
+  
+  textarea{
+	width: 100%;
+	height: 35vh;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  
+  input[type=checkbox]{
+	  display:inline;
+	  width:inherit;
+  }
+  
+  input[type=submit] {
+	background-color: #217cff;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  input[type=submit]:hover {
+	opacity: 0.8;
+  }
+  
+  
+  
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (min-width: 770px) {
+	form{
+	  width: 80%;
+	  margin: 0 auto;
+	}
+  
+	input{
+	  width:80%;
+	}
+  
+	textarea{
+	  width:80%;
+	  height: 25vh;
+   }
+   
+   div + label{
+	  line-height: 25vh;
+	  vertical-align:top;
+   }
+  }
