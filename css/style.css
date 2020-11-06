@@ -100,7 +100,7 @@ header{
 
   .nav_links .current {
 	
-	color: #217cff;
+	color: #0E0F73 ;
 	text-decoration: underline;
 }
 
@@ -150,8 +150,7 @@ footer{
 
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-	.gallery {animation:none;}
+
 
 /* added from media screen 760 */
 
@@ -253,7 +252,7 @@ footer{
   }
   
   input[type=submit] {
-	background-color: #217cff;
+	background-color: black;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
@@ -270,7 +269,7 @@ footer{
   
   
   /* Change styles for span and cancel button on extra small screens */
-  @media screen and (min-width: 770px) {
+  /* @media screen and (min-width: 770px) {
 	form{
 	  width: 80%;
 	  margin: 0 auto;
@@ -286,6 +285,7 @@ footer{
   textarea{
 	  
   }
+} */
 	/* input{
 	  width:80%;
 	}
@@ -299,4 +299,8 @@ footer{
 	  line-height: 25vh;
 	  vertical-align:top;
    } */
-  }
+
+   @media screen and (prefers-reduced-motion: reduce) {
+	.gallery > img:hover {
+		transform:none;} 
+   }
