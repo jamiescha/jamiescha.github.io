@@ -10,6 +10,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <div class="skip"><a href="#main">Skip to Main Content</a></div>	
+
     <header>
         <img src="imgs/jamiesart3.png" alt="Jamie's Art" id = "logo">
         <nav>
@@ -24,9 +27,10 @@
         
     </header>
 
-    <form action="https://formspree.io/f/xzbkgbaj" method="POST">
+    <form action="https://formspree.io/f/xzbkgbaj" method="POST" id = "main">
+      <h1>Suggestions? Feedback? Questions? Let me know!</h1>
         <fieldset>
-          <legend>Suggestions? Feedback? Questions? Let me know!</legend>
+          <!-- <legend>Suggestions? Feedback? Questions? Let me know!</legend> -->
       
           <label for="name_id">Your Name</label>
           <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
@@ -49,6 +53,14 @@
         </fieldset>
        </form>
 
+       <div class="header">
+	
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+        </div>
+      
+        <script src = "js/scroll.js"></script>
     
 
 </body>
