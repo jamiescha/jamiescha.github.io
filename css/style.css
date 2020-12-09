@@ -363,7 +363,29 @@ footer{
   
   
 
+  @media screen and (min-width: 1200px){
+	#logo{min-width:300px}
+
+  
+	/* Navbar */
+	header{
+	  flex-direction: row;
+	  justify-content: space-between;
+	  
+  }
 	
+  
+	.nav_links{  
+	  flex-direction: row;
+	  text-decoration: none;
+	
+  
+	}
+  
+	.nav_links a{
+	  padding: 0px;
+	}
+  } 
   
   
   
